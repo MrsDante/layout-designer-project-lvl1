@@ -24,6 +24,9 @@
 Ограничение по ширине контента: 1110px
 Выравнивание по центру
 Отступы по 100 пикселей сверху и снизу
+
+
+make deploy
 */
 
 
@@ -70,8 +73,24 @@ h3 {
   font-size: 34px;
 }
 
-header {
+header::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 50%;
   background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+
+}
+
+header {
   margin-top: 100px;
   margin-bottom: 100px;
 }
