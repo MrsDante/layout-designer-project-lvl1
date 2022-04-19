@@ -91,7 +91,6 @@ header::before {
 }
 
 header {
-  position: absolute;
   margin-top: 100px;
   margin-bottom: 100px;
 }
