@@ -94,8 +94,13 @@ header::before {
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
   margin-bottom: 100px;
+ 
+  
 }
 
 .main-header > img {
