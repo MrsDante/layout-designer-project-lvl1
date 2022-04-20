@@ -161,20 +161,29 @@ h1.orange {
   margin-left: 461px;
 }
 
-.header-description {
-  column-count: 2;
-  column-gap: 30px;
+.header-description {     /*мб сделать внутри левую и правую стороны и уже с ними работать как с флексами + вернуть 3 параграфа*/
+display: flex;
+justify-content: space-between;
+
+  /*column-count: 1;
+  column-gap: 30px;*/
+
   
-  margin-left: 165px;
-  padding-right: 165px;
+  padding-left: 160px;
+  
+ /* margin-left: 165px;
+  margin-right: 30px;*/
   /*padding-top: 185px;*/
   margin-top: 185px;
   
 }
 
 .header-description p {
-  margin-top: 0px;
-  break-inside: avoid;
+  
+  /*break-inside: avoid;*/
+  
+  width: 540px;
+  margin: 0 10px
   
 }
 
