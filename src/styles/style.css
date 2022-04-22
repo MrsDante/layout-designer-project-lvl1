@@ -61,16 +61,11 @@ body {
 
 .container {
   width: 1110px;
-  
-  /*padding: 0;*/
   margin: 0 auto;
-  
-  /*position: relative;*/
 }
 
 section {
   padding: 100px 0px;
-  
   text-align: center;
 }
 
@@ -79,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 
   font-family: "Neucha";
+  font-weight: normal;
   line-height: 1.2em;
 }
 
@@ -95,10 +91,9 @@ h3 {
   font-size: 34px;
 }
 
-header::before {
+.background-img::before {
   content: "";
   background-image: url("../images/background.png");
-  /*display: block;*/
   position: absolute;
   left: 0;
   top: 0;
@@ -113,21 +108,11 @@ header::before {
   background-repeat: no-repeat;
   /*background-position: 50% 0;*/
   background-size: cover;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-
 }
 
 header {
   display: flex;
   flex-wrap: wrap;
-  
-
   background-color:  #f5f4f0;
   
   /*margin: 0 auto;*/
@@ -190,21 +175,6 @@ justify-content: space-between;
   margin: 0 10px
   
 }
-
-/*.more {
-  border: 1px #fe8a02;
-  background-color: #fe8a02;
-  color:#fff;
-  text-decoration: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  
-  
-}*/
 
 .btn {
   display: block;
@@ -314,4 +284,170 @@ li.five-item:nth-child(4) {
   font-size: 52px;
   text-decoration: none;
   background-color: #2A2626;
+  text-align: left;
 }
+
+.five-item > h4,  p {
+  padding-left: 24px;
+  
+  text-align: left;
+}
+
+.five-it-head {
+  padding-left: 24px;
+  margin-left: 0;
+  /*margin-bottom: 16px;*/
+  font-size: 35px;
+
+  color: #fe8a02;
+  font-weight: 400;
+  text-align: left;
+}
+
+.number {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  font-family: "Neucha";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+  color: black;
+}
+
+.five-description {
+  color:black;
+  padding-bottom: 24px;
+}
+
+.five-item:not(:first-child):hover {
+  background-color: #fe8a02;
+}
+
+.five-item:not(:first-child):hover .number {
+  color: white;
+}
+
+.five-item:not(:first-child):hover .five-it-head {
+  color: white;
+}
+
+.five-item:not(:first-child):hover .five-description {
+  color: white;
+}
+
+
+/*вторая секция*/
+
+.page {
+  position: relative;
+  z-index: -2;
+}
+
+.light {
+  background-color: #f5f4f0;
+  color: black;
+}
+
+.dark {
+  background-color: #b09a81;
+  
+}
+
+.brown {
+  color: #fff;
+}
+
+.columns {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.image-middle {
+  vertical-align: middle;
+  /*filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));*/
+}
+
+.description {
+  font-family: "Neucha";
+  font-size: 34px;
+  font-weight: 400;
+  color: black;
+  line-height: 1.2;
+}
+
+
+.little-item {
+  font-family: "Neucha";
+  color: #908D8B;
+  font-size: 24px;
+}
+
+.upper-items-right {
+  text-align: left;
+}
+
+h2.black {
+  margin-left: 20px;  /*потом отдельно сделать весь код, что-то сдвигает заголовки*/
+}
+
+h4.first {
+  text-align: left;
+  column-span: all;
+  background-color: #b09a81;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 20px;
+
+
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  line-height: normal;
+  text-transform: uppercase;
+
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h4.second {
+  text-align: left;
+  column-span: all;
+  background-color: white;
+  color: #b09a81;
+  margin-top: 100px;
+  margin-bottom: 20px;
+
+
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  line-height: normal;
+  text-transform: uppercase;
+
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.columns > p {
+  margin-top: 0;
+
+  break-inside: avoid;
+  text-align: left;
+  
+  margin-left: -23px;
+}
+
+p.white {
+  color: white;
+}
+
+h2.white {
+  text-align: left;
+  color:#fff;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+/*в секцииях подправить маргин справа! сейсас меньше, чем нужно*/
