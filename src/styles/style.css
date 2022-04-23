@@ -32,6 +32,7 @@
 make deploy
 */
 
+/*ЧЕРДАК ИДЕАЛЬНО ЗАКОНЧЕН МЕНЯТЬ БОЛЬШЕ НИЧЕГО НЕ НУЖНО*/
 
 @font-face {
   font-weight: 400;
@@ -45,11 +46,10 @@ make deploy
   src: url("../fonts/OpenSans-Regular.ttf")  format("truetype");
 }
 
-/*.hello {
-  display: block;
+* {
+  box-sizing: border-box;
+}
 
-  color: #fff;
-}*/
 
 body {
   font-family: "Open Sans";
@@ -61,7 +61,7 @@ body {
 
 .container {
   width: 1110px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 section {
@@ -138,7 +138,7 @@ h1.orange {
 
   padding-top: 100px;
   margin: 0;
-  padding-left: 105px;
+  padding-left: 165px;
 
 }
 
@@ -151,14 +151,19 @@ h1.orange {
 }
 
 .header-description {     /*мб сделать внутри левую и правую стороны и уже с ними работать как с флексами + вернуть 3 параграфа*/
-display: flex;
-justify-content: space-between;
+/*display: flex;*/
+/*justify-content: space-between;*/
 
   /*column-count: 1;
   column-gap: 30px;*/
 
+  display: grid;
+  grid-template-columns: 540px 540px;
+  gap: 30px;
+
   
-  padding-left: 105px;
+  padding-left: 0;
+  margin-left: 165px;
   
  /* margin-left: 165px;
   margin-right: 30px;*/
@@ -167,14 +172,22 @@ justify-content: space-between;
   
 }
 
-.header-description p {
+/*.header-dscr-right {
+  width: 540px;
+}
+
+.header-dscr-left {
+  width: 540px;
+}*/
+
+/*.header-description p {
   
-  /*break-inside: avoid;*/
+  break-inside: avoid;
   
   width: 540px;
   margin: 0 10px
   
-}
+}*/
 
 .btn {
   display: block;
@@ -195,9 +208,10 @@ justify-content: space-between;
   margin-bottom: 100px;
   margin-top: 40px;
   /*margin-left: 735px;*/
-  margin-left: 675px;
+  margin-left: /*675px;*/ 735px;
 }
 
+/*ЧЕРДАК ИДЕАЛЬНО ЗАКОНЧЕН МЕНЯТЬ БОЛЬШЕ НИЧЕГО НЕ НУЖНО*/
 /*начало первой секции*/
 
 /*.container-2 {
@@ -287,7 +301,7 @@ li.five-item:nth-child(4) {
   text-align: left;
 }
 
-.five-item > h4,  p {
+.five-item > h4,  /*p*/ {  /*иначе Р влияет на сдвиг на чердаке! придумать этому Р другой класс*/
   padding-left: 24px;
   
   text-align: left;
@@ -451,3 +465,49 @@ h2.white {
 }
 
 /*в секцииях подправить маргин справа! сейсас меньше, чем нужно*/
+
+
+footer {
+  padding: 100px 0;
+}
+
+.more-container {
+  display: flex;
+
+  width: 1110px;
+  height: 190px;
+  margin-bottom: 60px;
+
+  background-color: #2A2626;
+}
+
+.know-more {
+  flex-basis: 50%;
+}
+
+.footer-descr {
+  margin-right: 122px;
+  padding-top: 55px;
+  padding-left: 55px;
+
+  font-weight: 400;
+  font-size: 34px;
+  font-family: "Neucha", cursive;
+  line-height: 40px;
+}
+
+.contacts {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  padding-top: 38px;
+  padding-left: 30px;
+}
+
+.email-label {
+  margin-bottom: 9px;
+
+  font-weight: 400;
+  font-size: 18px;
+}
+
