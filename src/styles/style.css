@@ -388,37 +388,34 @@ li.five-item:nth-child(4) {
 .columns {
   column-count: 2;
   column-gap: 30px;
+  
+  text-align: left;
+  margin-left: 164px;
+  
 }
 
 .image-middle {
   vertical-align: middle;
-  /*filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));*/
 }
 
 .description {
-  font-family: "Neucha";
-  font-size: 34px;
-  font-weight: 400;
-  color: black;
-  line-height: 1.2;
+  font-size: 30px;
 }
 
+.item-container{
+  width: 1110px;
+}
 
-.little-item {
-  font-family: "Neucha";
-  color: #908D8B;
-  font-size: 24px;
+.upper-items {
+  width: 1110px;
 }
 
 .upper-items-right {
-  text-align: left;
+  margin-left: 38px;
 }
 
-h2.black {
-  margin-left: 20px;  /*потом отдельно сделать весь код, что-то сдвигает заголовки*/
-}
-
-h4.first {
+.title-dark {
+  column-span: all;
   text-align: left;
   column-span: all;
   background-color: #b09a81;
@@ -436,46 +433,12 @@ h4.first {
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-}
 
-h4.second {
-  text-align: left;
-  column-span: all;
-  background-color: white;
-  color: #b09a81;
-  margin-top: 100px;
-  margin-bottom: 20px;
-
-
-  font-weight: 700;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  line-height: normal;
-  text-transform: uppercase;
-
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  
 }
 
 .columns > p {
-  margin-top: 0;
-
   break-inside: avoid;
-  text-align: left;
-  
-  margin-left: -23px;
-}
-
-p.white {
-  color: white;
-}
-
-h2.white {
-  text-align: left;
-  color:#fff;
-  margin-left: 20px;
-  margin-bottom: 30px;
 }
 
 /*в секцииях подправить маргин справа! сейсас меньше, чем нужно*/
