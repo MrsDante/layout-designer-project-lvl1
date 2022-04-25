@@ -50,9 +50,23 @@ make deploy
   box-sizing: border-box;
 }
 
+:root {
+  --white: #fff;
+  --translucentWhite: #d7ccc0;
+  --light: #f5f4f0;
+  --basic: #fe8a02;
+  --darkOrange: #ea7600;
+  --basicDark: #42413c;
+  --dark: #2a2626;
+  --translucentDark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+  --ligthGrey: #757575;
+}
+
 
 body {
-  color: #2A2626;
+  color: var(--dark);
   font-size: 16px;
   font-family: "Open Sans";
   line-height: 1.6em; 
@@ -118,7 +132,7 @@ header {
 
   z-index: 1;
   overflow: hidden;
-  background-color:  #f5f4f0;
+  background-color:  var(--light); 
   
   /*margin: 0 auto;*/
   /*padding-top: 100px;*/ 
@@ -138,6 +152,10 @@ h1.orange {
   padding-top: 100px;
   padding-left: 165px;
 
+}
+
+.text-orange {
+  color: var(--basic); 
 }
 
 .main-header > img {
@@ -192,7 +210,7 @@ h1.orange {
   width: 148px;
   height: 49px;
   border: none;
-  color: #fff;
+  color: var(--white);
   font-weight: 700;
   line-height: 48px;
   text-align: center;
@@ -250,7 +268,7 @@ padding-bottom: 30px;
 /*вторая секция*/
 
 .navigation {
-  background-color: #42413c;
+  background-color: var(--basicDark);  
   padding-top: 100px;
 }
 
@@ -277,7 +295,7 @@ padding-bottom: 30px;
 
 .five-item {
    /*width: 350px;*/
-   background-color: #f5f4f0;
+   background-color: var(--light);  
   /* margin-bottom: 20px;
    margin-left: 30px;*/
      
@@ -299,7 +317,7 @@ li.five-item:nth-child(4) {
 
 
 .five-items-title > h2 {
-  color: white;
+  color: var(--white);
   font-weight: normal;
   font-size: 52px;
   text-decoration: none;
@@ -321,7 +339,7 @@ li.five-item:nth-child(4) {
   /*margin-bottom: 16px;*/
   font-size: 35px;
 
-  color: #fe8a02;
+  color: var(--basic);
   font-weight: 400;
   text-align: left;
 }
@@ -335,11 +353,11 @@ li.five-item:nth-child(4) {
   font-weight: 400;
   line-height: 1;
   text-align: left;
-  color: black;
+  color: var(--dark);
 }
 
 .five-description {
-  color:black;
+  color: var(--dark);
   padding-top: 16px;
   padding-bottom: 24px;
   padding-left: 24px;
@@ -348,19 +366,19 @@ li.five-item:nth-child(4) {
 }
 
 .five-item:not(:first-child):hover {
-  background-color: #fe8a02;
+  background-color: var(--basic);
 }
 
 .five-item:not(:first-child):hover .number {
-  color: white;
+  color: var(--white);
 }
 
 .five-item:not(:first-child):hover .five-it-head {
-  color: white;
+  color: var(--white);
 }
 
 .five-item:not(:first-child):hover .five-description {
-  color: white;
+  color: var(--white);
 }
 
 
@@ -373,34 +391,34 @@ li.five-item:nth-child(4) {
 }
 
 .light {
-  background-color: #f5f4f0;
-  color: black;
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 .dark {
-  background-color: #b09a81;
+  background-color: var(--brown);
   
 }
 
 .brown {
-  color: #fff;
+  color: var(--white);
 }
 
 p.white {
-  color: #fff;
+  color: var(--white);
 }
 
 h2.white {
-  color:#fff;
+  color: var(--white);
 }
 
 .title-dark.white {
-  color: #b09a81;
-  background-color: white;
+  color: var(--brown);
+  background-color: var(--white);
 }
 
 .description_big {
-  color: #2a2626;
+  color: var(--dark);
   margin-top: 30px;
   font-family: "Neucha";
   font-size: 34px;
@@ -439,7 +457,7 @@ h2.white {
 
 .little-item {
   font-family: "Neucha";
-  color: #908D8B;
+  color: var(--translucentDark);
   font-size: 24px;
 }
 
@@ -448,7 +466,7 @@ h2.white {
   column-span: all;
   text-align: left;
   column-span: all;
-  background-color: #b09a81;
+  background-color: var(--translucentDark);
   color: white;
   margin-top: 100px;
   margin-bottom: 20px;
@@ -474,7 +492,7 @@ h2.white {
 
 footer {
   padding: 100px 0;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .more-container {
@@ -485,7 +503,7 @@ footer {
   margin-bottom: 60px;
   margin-left: 165px;
 
-  background-color: #42413c;
+  background-color: var(--basicDark);
 }
 
 .know-more {
@@ -528,7 +546,7 @@ footer {
   height: 50px;
   border: none;
 
-  background-color: #fe8a02;
+  background-color: var(--basic);
   cursor: pointer;
 }
 
@@ -550,7 +568,7 @@ footer {
 .email-label.white,
 .convention-description.white,
 .convention-description-link.white {
-  color: #fff;
+  color: var(--white);
 }
 
 .convention-description {
