@@ -1,1 +1,1 @@
-picayune-minister.surge.sh
+fast-train.surge.sh
