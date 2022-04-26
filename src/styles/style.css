@@ -268,13 +268,22 @@ padding-bottom: 30px;
 .navigation {
   background-color: var(--basicDark);  
   padding-top: 100px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .five-items {
   display: grid;
   grid-template-columns: 350px 350px 350px;
-  
   gap: 20px 30px;
+  
+  /*grid-template-areas:
+    "zero one two"
+    "three four five";*/
+  
+ 
   /*display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -294,6 +303,7 @@ padding-bottom: 30px;
 .five-item {
    /*width: 350px;*/
    background-color: var(--light);  
+   
   /* margin-bottom: 20px;
    margin-left: 30px;*/
      
@@ -314,7 +324,7 @@ li.five-item:nth-child(4) {
 
 
 
-.five-items-title > h2 {
+.navigation-title {    /*five-items-title > h2*/
   color: var(--white);
   font-weight: normal;
   font-size: 52px;
@@ -322,7 +332,6 @@ li.five-item:nth-child(4) {
   background-color: #42413c;
   text-align: left;
 
-  
 }
 
 /*.five-item > h4 {  

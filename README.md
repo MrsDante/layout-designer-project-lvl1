@@ -1,1 +1,1 @@
-fast-train.surge.sh
+pointless-way.surge.sh
