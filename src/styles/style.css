@@ -243,7 +243,7 @@ h1.orange {
 section.sct_wth_vid > h2 {
   /*text-align: center;*/
   font-weight: normal;
-  margin-left: 0;
+  margin-left: 65px;
 }
 
 .container-2-video {
@@ -437,6 +437,11 @@ h2.white {
 
 .image-middle {
   vertical-align: middle;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.upper-items-left {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .description {
