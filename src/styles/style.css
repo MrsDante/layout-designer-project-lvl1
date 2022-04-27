@@ -268,7 +268,7 @@ padding-bottom: 30px;
 .navigation {
   background-color: var(--basicDark);  
   
-  padding-top: 86px;
+  padding-top: 84px;
   /*width: 100%;
   left: 0;
   right: 0;
@@ -295,20 +295,25 @@ padding-bottom: 30px;
 
   padding-top: 100px; /*100*/
   
-  margin-left: 130px;
+  margin-left: 128px;
   /*margin-right: 0px;*/
   
   list-style-type: none;
 }
 
-.five-item {
-   /*width: 350px;*/
+.five-item:not(:first-child) {
+  background-color: var(--light);
+}
+
+/*.five-item {
+   
    background-color: var(--light);  
    
-  /* margin-bottom: 20px;
-   margin-left: 30px;*/
+   margin-bottom: 20px;
+   margin-left: 30px;
+   /*width: 350px;
      
-}
+}*/
 
 a {
   text-decoration: none;
@@ -325,13 +330,14 @@ li.five-item:nth-child(4) {
 
 
 
-.navigation-title {    /*five-items-title > h2*/
+.navigation-title {    /*five-items-title > h2     .navigation-title*/
   color: var(--white);
   font-weight: normal;
   font-size: 52px;
   text-decoration: none;
   background-color: #42413c;
   text-align: left;
+
 }
 
 
@@ -347,7 +353,7 @@ li.five-item:nth-child(4) {
 }
 
 .number {
-  padding-top: 24px;
+  padding-top: 26px;
   padding-bottom: 37px; /*40*/
   padding-left: 24px;
   font-family: "Neucha";
@@ -360,10 +366,11 @@ li.five-item:nth-child(4) {
 
 .five-description {
   color: var(--dark);
-  padding-top: 16px;
+  padding-top: 12px;
   padding-right: 24px;
   padding-bottom: 24px;
   padding-left: 24px;
+  font-family: 'Open Sans';
   text-align: left;
   
 }
