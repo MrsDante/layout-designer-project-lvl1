@@ -486,6 +486,16 @@ h2.white {
   text-align: left;
 }
 
+.upper-items-left {
+  /*margin-top: 5px;*/
+  margin-right: 32px;
+  text-align: left;
+}
+
+.upper-items-left > p.description_big.white {
+color: var(--white);
+}
+
 .little-item {
   font-family: "Neucha";
   color: var(--translucentDark);
@@ -517,6 +527,13 @@ h2.white {
 
 .columns > p {
   break-inside: avoid;
+}
+
+#premature-optimization {
+  position: relative;
+  background-color: var(--brown);
+  padding: 100px 0;
+  color: var(--white);
 }
 
 /*ЗАКОНЧЕНО*/
