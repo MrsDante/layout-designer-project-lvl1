@@ -1,37 +1,3 @@
-/*
-Цвета
-Белый: #fff
-Полупрозрачный белый: #d7ccc0
-Светлый: #f5f4f0
-Основной: #fe8a02
-Основной тёмный: #42413c
-Тёмный: #2a2626
-Полупрозрачный тёмный: #908d8b
-Коричневый: #b09a81
-Синий: #1085c5
-
-Шрифты
-В качестве основного шрифта используется Open Sans
-Для заголовков используется шрифт Neucha
-Размер шрифта: 16px
-Межстрочный интервал: 1.6em
-Цвет шрифта: #2A2626
-
-Заголовки
-Межстрочный интервал заголовков: 1.2em
-Размер заголовка первого уровня: 72px
-Размер заголовка второго уровня: 60px
-Размер заголовка третьего уровня: 34px
-
-Секции
-Ограничение по ширине контента: 1110px
-Выравнивание по центру
-Отступы по 100 пикселей сверху и снизу
-
-
-make deploy
-*/
-
 /*ЧЕРДАК ИДЕАЛЬНО ЗАКОНЧЕН МЕНЯТЬ БОЛЬШЕ НИЧЕГО НЕ НУЖНО*/
 
 @font-face {
@@ -64,17 +30,15 @@ make deploy
   --ligthGrey: #757575;
 }
 
-
 body {
   color: var(--dark);
   font-size: 16px;
-  font-family: "Open Sans";
-  line-height: 1.6em; 
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6em;
 }
 
 .container {
   width: 1110px;
-  /*margin: 0 auto;*/
 }
 
 section {
@@ -82,12 +46,16 @@ section {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
   margin: 0;
   padding: 0;
-
-  font-family: "Neucha";
   font-weight: normal;
+  font-family: "Neucha", sans-serif;
   line-height: 1.2em;
 }
 
@@ -110,18 +78,12 @@ h3 {
   bottom: 0;
   left: 0;
   z-index: -1;
-
   width: 100%;
   height: 100%;
-
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  
-  
   opacity: 0.1;
- 
-  /*background-position: 50% 0;*/
   content: "";
 }
 
@@ -129,29 +91,21 @@ header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-
   z-index: 1;
   overflow: hidden;
   background-color:  var(--light); 
-  
-  /*margin: 0 auto;*/
-  /*padding-top: 100px;*/ 
 }
-
 
 p {
   margin: 0;
   padding: 0;
 }
 
-
 h1.orange {
   position: relative;
-  /*z-index: 2;*/
   margin: 0;
   padding-top: 100px;
   padding-left: 165px;
-
 }
 
 .text-orange {
@@ -162,47 +116,17 @@ h1.orange {
   position: absolute;
   height: 525px;
   margin-top: 55px;
-  /*margin-right: -270px;*/
   margin-left: 461px;
 }
 
-.header-description {     /*мб сделать внутри левую и правую стороны и уже с ними работать как с флексами + вернуть 3 параграфа*/
-/*display: flex;*/
-/*justify-content: space-between;*/
-
-  /*column-count: 1;
-  column-gap: 30px;*/
-
+.header-description {
   display: grid;
   grid-template-columns: 540px 540px;
   gap: 30px;
-
   margin-top: 185px;
   margin-left: 165px;
   padding-left: 0;
-  
- /* margin-left: 165px;
-  margin-right: 30px;*/
-  /*padding-top: 185px;*/
-  
 }
-
-/*.header-dscr-right {
-  width: 540px;
-}
-
-.header-dscr-left {
-  width: 540px;
-}*/
-
-/*.header-description p {
-  
-  break-inside: avoid;
-  
-  width: 540px;
-  margin: 0 10px
-  
-}*/
 
 .btn {
   display: block;
@@ -222,19 +146,10 @@ h1.orange {
 .btn-more {
   margin-top: 40px;
   margin-bottom: 100px;
-  /*margin-left: 735px;*/
-  margin-left: /*675px;*/ 735px;
+  margin-left: 735px;
 }
 
 /*ЧЕРДАК ИДЕАЛЬНО ЗАКОНЧЕН МЕНЯТЬ БОЛЬШЕ НИЧЕГО НЕ НУЖНО*/
-/*начало первой секции*/
-
-/*.container-2 {
-  width: 1110px;
-  margin: 0 auto;
-}*/
-
-/*CЕКЦИЯ С ВИДЕО ГОТОВА*/
 
 .sct_wth_vid {
   display: flex;
@@ -242,14 +157,13 @@ h1.orange {
   align-items: center;
   width: 100%;
   background: var(--white);
-
 }
 
 .container-2-video {
   box-sizing: border-box;
   border: 0;
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-  margin-bottom: -200px; /*-200px*/
+  margin-bottom: -200px;
 }
 
 .video-text {
@@ -258,46 +172,23 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 text-align: center;
-padding-top: 27px;  /*30*/
+padding-top: 27px;
 padding-bottom: 30px;
 }
-/*CЕКЦИЯ С ВИДЕО ГОТОВА*/
 
 /*вторая секция*/
 
 .navigation {
   background-color: var(--basicDark);  
-  
   padding-top: 84px;
-  /*width: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;*/
 }
 
 .five-items {
   display: grid;
   grid-template-columns: 350px 350px 350px;
   gap: 20px 30px;
-  
-  /*grid-template-areas:
-    "zero one two"
-    "three four five";*/
-  
- 
-  /*display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;*/
-  
-  /*padding-bottom: 100px;*/
-
-  padding-top: 100px; /*100*/
-  
+  padding-top: 100px;
   margin-left: 128px;
-  /*margin-right: 0px;*/
-  
   list-style-type: none;
 }
 
@@ -305,48 +196,23 @@ padding-bottom: 30px;
   background-color: var(--light);
 }
 
-/*.five-item {
-   
-   background-color: var(--light);  
-   
-   margin-bottom: 20px;
-   margin-left: 30px;
-   /*width: 350px;
-     
-}*/
-
 a {
   text-decoration: none;
 }
 
-
-/*li.five-item:nth-child(1) {
-  margin-left: 0px;
-}
-
-li.five-item:nth-child(4) {
-  margin-left: 0px;
-}*/
-
-
-
-.navigation-title {    /*five-items-title > h2     .navigation-title*/
+.navigation-title {
   color: var(--white);
   font-weight: normal;
   font-size: 52px;
   text-decoration: none;
   background-color: #42413c;
   text-align: left;
-
 }
-
 
 .five-it-head {
   padding-left: 24px;
   margin-left: 0;
-  /*margin-bottom: 16px;*/
   font-size: 35px;
-
   color: var(--basic);
   font-weight: 400;
   text-align: left;
@@ -354,7 +220,7 @@ li.five-item:nth-child(4) {
 
 .number {
   padding-top: 26px;
-  padding-bottom: 37px; /*40*/
+  padding-bottom: 37px;
   padding-left: 24px;
   font-family: "Neucha";
   font-size: 64px;
@@ -372,7 +238,6 @@ li.five-item:nth-child(4) {
   padding-left: 24px;
   font-family: 'Open Sans';
   text-align: left;
-  
 }
 
 .five-item:not(:first-child):hover {
@@ -391,8 +256,6 @@ li.five-item:nth-child(4) {
   color: var(--white);
 }
 
-
-/*вторая секция*/
 /*ЗАКОНЧЕНО*/
 
 .page {
@@ -407,7 +270,6 @@ li.five-item:nth-child(4) {
 
 .dark {
   background-color: var(--brown);
-  
 }
 
 .brown {
@@ -442,7 +304,6 @@ h2.white {
   
   text-align: left;
   margin-left: 164px;
-  
 }
 
 .flex {
@@ -454,40 +315,27 @@ h2.white {
 .upper-items-image {
   vertical-align: middle;
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-  
 }
-
-/*.upper-items-right.image-middle {
-  filter: drop-shadow(0px 16px 52px rgba(0, 0, 0, 0.15));
-}*/
-
-/*.upper-items-left {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-}*/
 
 .description {
   font-size: 30px;
 }
 
 .item-container{
-  /*margin-top: -10px;*/
   width: 1110px;
 }
 
 .upper-items {
- /* margin-top: 10px;*/
   padding-bottom: 100px;
   width: 1110px;
 }
 
 .upper-items-right {
-  /*margin-top: 5px;*/
   margin-left: 32px;
   text-align: left;
 }
 
 .upper-items-left {
-  /*margin-top: 5px;*/
   margin-right: 32px;
   text-align: left;
 }
@@ -509,17 +357,12 @@ color: var(--white);
   column-span: all;
   background-color: var(--brown);
   color: white;
-  /*margin-top: 100px;*/
   margin-bottom: 20px;
-
   font-size: 14px;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   line-height: 17px;
-  /*line-height: normal;*/
   text-transform: uppercase;
-
- 
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
@@ -537,104 +380,6 @@ color: var(--white);
 }
 
 /*ЗАКОНЧЕНО*/
-
-
-/*footer {
-  padding: 100px 0;
-  background-color: var(--white);
-}
-
-.more-container {
-  display: flex;
-
-  width: 1110px;
-  height: 190px;
-  margin-bottom: 60px;
-  margin-left: 165px;
-
-  background-color: var(--basicDark);
-}
-
-.know-more {
-  flex-basis: 50%;
-}
-
-.footer-descr {
-  margin-right: 122px;
-  padding-top: 55px;
-  padding-left: 55px;
-
-  font-weight: 400;
-  font-size: 34px;
-  font-family: "Neucha", cursive;
-  line-height: 40px;
-}
-
-.contacts {
-  display: flex;
-  flex-basis: 50%;
-  flex-direction: column;
-  padding-top: 38px;
-  padding-left: 30px;
-}
-
-.email-label {
-  margin-bottom: 9px;
-
-  font-weight: 400;
-  font-size: 18px;
-}
-
-.btn-submit-footer {
-  position: relative;
-
-  padding-top: 11px;
-  margin-left: -4px;
-
-  width: 70px;
-  height: 50px;
-  border: none;
-
-  background-color: var(--basic);
-  cursor: pointer;
-}
-
-
-.btn-submit-footer::before {
-  position: absolute;
-  top: 13px;
-  right: 0;
-  bottom: 0;
-  left: 18px;
-
-  background-image: url("../images/send.svg");
-  background-repeat: no-repeat;
-
-  content: "";
-}
-
-
-.email-label.white,
-.convention-description.white,
-.convention-description-link.white {
-  color: var(--white);
-}
-
-.convention-description {
-font-size: 12px;
-}
-
-.footer-email {
-  height: 50px;
-  width: 423px;
-  padding: 15px;
-}
-
-.my_contacts {
-  margin-left: 484px;
-  text-align: center;
-}*/
-
 
 .footer {
   display: flex;
@@ -736,4 +481,3 @@ input[type=email]::placeholder {
 .to-courses a {
   color: var(--blue);
 }
-
