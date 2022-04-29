@@ -539,7 +539,7 @@ color: var(--white);
 /*ЗАКОНЧЕНО*/
 
 
-footer {
+/*footer {
   padding: 100px 0;
   background-color: var(--white);
 }
@@ -633,4 +633,107 @@ font-size: 12px;
 .my_contacts {
   margin-left: 484px;
   text-align: center;
+}*/
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  padding: 100px 165px 111px 165px ;
 }
+
+
+.footer-box {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  max-width: 1110px;
+  box-sizing: border-box;
+  background-color: #42413C;
+  padding: 38px 55px 40px 55px;
+  margin-bottom: 76px;
+  color: var(--white);
+}
+
+.footer-box-text {
+  flex: 1;
+  margin-top: 17px;
+  margin-bottom: 15px;
+  font-family: 'Neucha', sans-serif;
+  font-size: 34px;
+  line-height: 120%;
+}
+
+.newsletter-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.e-mail {
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+.newsletter-block form {
+  display: flex;
+  width: 100%;
+}
+
+
+input[type=email] {
+  flex: 1;
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+input[type=email]::placeholder {
+  padding-left: 15px;
+  color: var(--translucentwhite);
+}
+
+.submit {
+  position: relative;
+  width: 70px;
+  height: 50px;
+  background-color: var(--basic);
+}
+
+.submit:before {
+  content: '';
+  position: absolute;
+  background: url('../images/send.svg') no-repeat center center;
+  width: 70px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+
+.submit:hover {
+  background-color: #ea7600;
+}
+
+.source {
+  margin: 16px 0;
+}
+
+.source a {
+  color: var(--blue);
+}
+
+.agreement {
+  font-size: 12px;
+}
+
+.agreement a {
+  color: var(--white);
+}
+.to-courses a {
+  color: var(--blue);
+}
+
