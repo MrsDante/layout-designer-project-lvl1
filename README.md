@@ -1,1 +1,1 @@
-last-canvas.surge.sh
+terrible-view.surge.sh
