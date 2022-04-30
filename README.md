@@ -5,7 +5,7 @@
 
 ## Setup
 
-https://cultured-belief.surge.sh/
+https://automatic-game.surge.sh/
 
 ```sh
 $ make install

@@ -1,7 +1,7 @@
 @font-face {
   font-weight: 400;
-  font-family: 'Neucha', sans-serif;
-  src: url("../fonts/Neucha-Regular.ttf") format("truetype");
+  font-family: "Neucha";
+  src: url("../fonts/Neucha-Regular.ttf")  format("truetype");
 }
 
 @font-face {
@@ -44,16 +44,11 @@ section {
   text-align: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+  font-family: "Neucha";
   font-weight: normal;
-  font-family: 'Neucha', sans-serif;
   line-height: 1.2em;
 }
 
@@ -78,9 +73,10 @@ h3 {
   z-index: -1;
   width: 100%;
   height: 100%;
+
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
   opacity: 0.1;
   content: "";
 }
@@ -89,25 +85,29 @@ header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+
   z-index: 1;
   overflow: hidden;
-  background-color: var(--light);
+  background-color:  var(--light); 
 }
+
 
 p {
   margin: 0;
   padding: 0;
 }
 
+
 h1.orange {
   position: relative;
   margin: 0;
   padding-top: 100px;
   padding-left: 165px;
+
 }
 
 .text-orange {
-  color: var(--basic);
+  color: var(--basic); 
 }
 
 .main-header > img {
@@ -121,6 +121,7 @@ h1.orange {
   display: grid;
   grid-template-columns: 540px 540px;
   gap: 30px;
+
   margin-top: 185px;
   margin-left: 165px;
   padding-left: 0;
@@ -128,10 +129,11 @@ h1.orange {
 
 .btn {
   display: block;
+  display: block;
   width: 148px;
   height: 49px;
-  color: var(--white);
   border: none;
+  color: var(--white);
   font-weight: 700;
   line-height: 48px;
   text-align: center;
@@ -162,7 +164,7 @@ h1.orange {
 }
 
 .video-text {
-font-family: "Open Sans", sans-serif;
+font-family: "Open Sans";
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -200,6 +202,7 @@ a {
   text-decoration: none;
   background-color: #42413c;
   text-align: left;
+
 }
 
 .five-it-head {
@@ -215,7 +218,7 @@ a {
   padding-top: 26px;
   padding-bottom: 37px;
   padding-left: 24px;
-  font-family: 'Neucha', sans-serif;
+  font-family: "Neucha";
   font-size: 64px;
   font-weight: 400;
   line-height: 1;
@@ -229,7 +232,7 @@ a {
   padding-right: 24px;
   padding-bottom: 24px;
   padding-left: 24px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   text-align: left;
 }
 
@@ -283,7 +286,7 @@ h2.white {
 .description.description_big {
   color: var(--dark);
   margin-top: 30px;
-  font-family: "Neucha", sans-serif;
+  font-family: "Neucha";
   font-size: 34px;
   font-weight: 400;
   line-height: 1.2;
@@ -311,7 +314,7 @@ h2.white {
   font-size: 30px;
 }
 
-.item-container {
+.item-container{
   width: 1110px;
 }
 
@@ -331,7 +334,7 @@ h2.white {
 }
 
 .upper-items-left > p.description_big.white {
-  color: var(--white);
+color: var(--white);
 }
 
 .little-item {
@@ -339,7 +342,6 @@ h2.white {
   color: var(--translucentDark);
   font-size: 24px;
 }
-
 
 .title-dark {
   column-span: all;
@@ -374,9 +376,8 @@ h2.white {
   flex-direction: column;
   align-items: center;
   font-size: 14px;
-  padding: 100px 165px 111px 165px;
+  padding: 100px 165px 111px 165px ;
 }
-
 
 .footer-box {
   display: flex;
@@ -384,7 +385,7 @@ h2.white {
   width: 100%;
   max-width: 1110px;
   box-sizing: border-box;
-  background-color: #42413c;
+  background-color: #42413C;
   padding: 38px 55px 40px 55px;
   margin-bottom: 76px;
   color: var(--white);
@@ -394,7 +395,7 @@ h2.white {
   flex: 1;
   margin-top: 17px;
   margin-bottom: 15px;
-  font-family: "Neucha", sans-serif;
+  font-family: 'Neucha', sans-serif;
   font-size: 34px;
   line-height: 120%;
 }
