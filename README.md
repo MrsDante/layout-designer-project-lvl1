@@ -5,7 +5,7 @@
 
 ## Setup
 
-https://good-transport.surge.sh/
+https://cultured-belief.surge.sh/
 
 ```sh
 $ make install
