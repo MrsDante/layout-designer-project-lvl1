@@ -5,7 +5,7 @@
 
 ## Setup
 
-https://auspicious-plate.surge.sh/
+https://good-transport.surge.sh/
 
 ```sh
 $ make install
