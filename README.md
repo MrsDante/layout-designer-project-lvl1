@@ -5,7 +5,7 @@
 
 ## Setup
 
-https://raspy-mint.surge.sh/
+https://statuesque-touch.surge.sh/
 
 ```sh
 $ make install
