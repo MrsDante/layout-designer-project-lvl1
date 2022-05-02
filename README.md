@@ -5,7 +5,7 @@
 
 ## Setup
 
-https://statuesque-touch.surge.sh/
+https://high-snow.surge.sh/
 
 ```sh
 $ make install
