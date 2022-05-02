@@ -5,7 +5,7 @@
 
 ## Setup
 
-https://automatic-game.surge.sh/
+https://raspy-mint.surge.sh/
 
 ```sh
 $ make install
